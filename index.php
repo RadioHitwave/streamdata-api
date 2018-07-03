@@ -75,6 +75,8 @@ if (isset($_GET['cover'])) {
     }
 } elseif (isset($_GET['title'])) {
     die($cache->title);
+} else {
+    die(json_encode($cache));
 }
 
 ?>
